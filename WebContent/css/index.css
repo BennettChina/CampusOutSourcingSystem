@@ -1,0 +1,209 @@
+#top {
+	height: 60px;
+	overflow: hidden;
+	margin: 0;
+}
+
+.user-info{
+	float: left;
+	overflow: hidden;
+}
+
+.user-icon{
+	float: left;
+	margin: 15px;
+	color: white;
+}
+
+.user{
+	display: inline-block;
+	margin-top: 20px;
+}
+
+#logo {
+	height: 134px;
+	text-align: center;
+	margin-top: 50px;
+}
+
+#logo>img {
+	vertical-align: bottom;
+}
+
+body {
+	background-image: url(../img/20.jpg);
+	margin: 0;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+a:hover {
+	color: cornflowerblue;
+}
+
+#announcement {
+	width: 420px;
+	height: 60px;
+	margin: 0 auto;
+	line-height: 60px;
+	overflow: hidden;
+	color: white;
+}
+
+#app_download {
+	position: absolute;
+	top: 195px;
+	left: 75%;
+	width: 95px;
+	height: 40px;
+}
+
+.app {
+	width: 95px;
+	height: 40px;
+	border: hidden;
+	background-color: transparent;
+}
+
+#app_QR>img {
+	width: 100px;
+	height: 100px;
+	vertical-align: bottom;
+	margin-top: 10px;
+}
+
+#app_QR {
+	width: 120px;
+	height: 136px;
+	position: fixed;
+	top: 65px;
+	left: 75%;
+	border: 1px solid white;
+	text-align: center;
+	background-color: white;
+	display: none;
+}
+
+#app_QR>p {
+	font-size: 12px;
+	margin: 0;
+	color: #8F8F94;
+}
+
+#app_download:hover #app_QR {
+	display: block;
+}
+
+#re_log_join {
+	position: absolute;
+	right: 0;
+	top: 204px;
+	overflow: hidden;
+}
+
+#register,
+#login,
+#join {
+	float: right;
+	margin-right: 30px;
+}
+
+#left {
+	width: 200px;
+	padding: 0px 0 10px 0;
+	border: 1px solid lightgray;
+	background-color: #FCFDF8;
+}
+
+#left_task {
+	padding: 0 0 10px 0;
+}
+
+.task {
+	list-style-type: none;
+	padding-left: 0;
+}
+
+.target {
+	background-color: lightgray;
+	color: white;
+}
+
+.list,
+.target {
+	height: 40px;
+	line-height: 40px;
+}
+
+.list:hover {
+	background-color: #D3D3D3;
+}
+
+.title {
+	text-align: center;
+	background-color: #C0AA82;
+	margin: 0;
+	height: 50px;
+	line-height: 50px;
+	color: white;
+}
+
+.content {
+	position: absolute;
+	top: 245px;
+	right: 0;
+	width: 1040px;
+	height: 625px;
+	background-color: #FCFDF8;
+}
+
+.div1 {
+	margin-top: 17px;
+}
+
+.img,
+.menu {
+	width: 330px;
+	height: 210px;
+	border-radius: 6px;
+}
+
+.menu {
+	display: inline-block;
+	border: 1px solid #D3D3D3;
+	margin-right: 10px;
+}
+
+.menu>a {
+	height:210px;
+	position: relative;
+}
+
+#shadow {
+	width: 100%;
+	height: 212px;
+	position: absolute;
+}
+
+#shadow_content {
+	width: 100%;
+	height: 212px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	text-align: center;
+	line-height: 212px;
+	display: none;
+	background-color: rgba(0, 0, 0, 0.4)!important;
+}
+
+#shadow:hover #shadow_content {
+	display: block;
+}
+
+#bottom {
+	margin-top: 50px;
+}

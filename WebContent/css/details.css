@@ -1,0 +1,168 @@
+#center {
+	margin: 50px 150px 20px 150px;
+}
+
+#center_top {
+	height: 50px;
+	overflow: hidden;
+}
+
+#zone>i {
+	height: 30px;
+	background: url(../img/address-icon.png) no-repeat 0 6px;
+}
+
+#zone span {
+	width: 200px;
+	padding-right: 10px;
+	border-right: 1px solid lightgray;
+}
+
+#order>i {
+	background: url(../img/order-list.png) no-repeat 0 6px;
+}
+
+#zone>i,
+#order>i {
+	width: 14px;
+	margin-right: 6px;
+	background-size: 14px 18px;
+}
+
+#zone,
+#order>i,
+#zone>i {
+	float: left;
+}
+
+#order {
+	padding: 0 10px 0 10px;
+}
+
+#order span,
+#order~div,
+#order>i,
+#zone span {
+	height: 30px;
+	line-height: 30px;
+	font-size: 14px;
+	text-align: center;
+}
+
+#order~div {
+	width: 50px;
+}
+
+#order,
+#order~div {
+	float: right;
+	margin-left: 10px;
+	background-color: white;
+}
+
+#sort_list {
+	height: 100px;
+	background-color: white;
+	line-height: 100px;
+	font-size: 14px;
+}
+
+.select {
+	margin-left: 6px;
+	color: coral;
+	border: 1px solid coral;
+}
+
+#sort {
+	margin-left: 20px;
+	padding: 0 12px 0 32px;
+	background: url(../img/new-icon-sort.png) no-repeat;
+	background-size: 25px 18px;
+	height: 30px;
+	border-right: 2px solid lightgray;
+}
+
+#list {
+	margin-left: 20px;
+	color: coral;
+}
+
+._list {
+	margin-left: 20px;
+}
+
+.search {
+	margin: 30px 30px 0 0;
+}
+
+#search_btn,
+.search {
+	height: 40px;
+	float: right;
+}
+
+#search {
+	width: 200px;
+	height: 34px;
+	float: right;
+	outline: none;
+}
+
+#center_content {
+	margin: 20px 0 40px;
+	background-color: white;
+}
+
+.shop_wrap {
+	padding: 20px 7px 0 20px;
+}
+
+.shop_wrap a {
+	margin: 0;
+}
+
+.shop_info {
+	width: 210px;
+	height: 240px;
+	float: left;
+	margin: 10px;
+}
+
+.img {
+	border: 1px solid lightgray;
+}
+
+.img,
+.img>img {
+	width: 210px;
+	height: 150px;
+}
+
+.food_info,
+.food_info>p,
+.send {
+	height: 20px;
+	margin: 0;
+}
+
+.send {
+	margin-top: 30px;
+}
+
+.send,
+.shop_wrap,
+.food_info>p {
+	overflow: hidden;
+}
+
+.send_info {
+	float: left;
+	margin-right: 30px;
+	font-size: 12px;
+	color: #666;
+}
+
+.time {
+	margin-right: 0;
+	float: right !important;
+}

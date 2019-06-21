@@ -1,0 +1,54 @@
+#bottom{
+	background-color: #222;
+}
+#bottom_a{
+	height: 200px;
+	margin: 0 auto;
+	overflow: hidden;
+	border-bottom: 1px solid #666;
+	position: relative;
+}
+#bottom_left{
+	left: 200px;
+}
+#bottom_mid{
+	left: 600px;;
+}
+#bottom_right{
+	right: 200px;
+}
+#bottom_left,#bottom_mid,#bottom_right{
+	position: absolute;
+	top: 20px;
+}
+#bottom_mid>h2,#bottom_right{
+	font-family: "仿宋";
+	color: white;
+}
+#bottom_right img{
+	width: 90px;
+	height: 90px;
+	border: 2px solid lightgray;
+}
+#bottom_left,#bottom_left a,#bottom_mid>p{
+	color: #aaa;
+	font-size: 14px;
+}
+#bottom_left li{
+	margin-bottom: 10px;
+}
+#bottom_left a:hover{
+	color: white;
+}
+#bottom_left>ul{
+	float: left;
+	list-style-type: none;
+}
+#bottom_icon,#bottom_icon a{
+	font-size: 12px;
+	height: 100px;
+	margin: 0;
+	text-align: center;
+	line-height: 100px;
+	color: #666666;
+}

@@ -1,0 +1,35 @@
+a{
+	text-decoration: none;
+}
+
+.end-font {
+	font-size: 12px;
+}
+
+.shopName {
+	float: left;
+}
+
+.font {
+	font-size: 14px;
+}
+
+.food_info {
+	margin: 0;
+	padding: 0;
+}
+
+.add-food {
+	width: 100%;
+	height: 40px;
+	text-align: center;
+	color: #777;
+	border: 1px dashed #dee2e6;
+	line-height: 40px;
+	font-size: 14px;
+}
+
+.add-food:hover {
+	text-decoration: none;
+	border-color: #FFC8C8;
+}

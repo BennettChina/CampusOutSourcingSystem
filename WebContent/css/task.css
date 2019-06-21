@@ -1,0 +1,109 @@
+#center {
+	margin: 50px 150px 20px 150px;
+}
+
+#order-list {
+	height: 100px;
+	background-color: white;
+	line-height: 100px;
+	font-size: 14px;
+	margin-bottom: 20px;
+	position: relative;
+}
+
+.select {
+	margin-left: 6px;
+	color: coral;
+	border: 1px solid coral;
+}
+
+#sort {
+	margin-left: 20px;
+	padding: 0 12px 0 32px;
+	background: url(../img/task.jpg) no-repeat;
+	background-size: 25px 18px;
+	height: 30px;
+	border-right: 2px solid lightgray;
+}
+
+#select-addr{
+	position: absolute;
+	top: 1px;
+	left: 310px;
+}
+
+.list {
+	margin-left: 20px;
+	color: coral;
+}
+
+._list {
+	margin-left: 20px;
+}
+
+.search {
+	margin: 30px 30px 0 0;
+}
+
+#search_btn,
+.search {
+	height: 40px;
+	float: right;
+}
+
+#search {
+	width: 200px;
+	height: 34px;
+	float: right;
+	outline: none;
+}
+.task-list{
+	
+}
+.task-title{
+	margin: 15px 0;
+}
+.task-info{
+	color: #715252;
+	font-size: 12px;
+}
+ul{
+	list-style-type: none;
+	padding: 0;
+}
+.task-li{
+	height: 100px;
+	overflow: hidden;
+	margin-bottom: 20px;
+	background-color: white;
+	padding-left: 30px;
+	position: relative;
+}
+.begin-addr,.end-addr{
+	color: #FF7F50;
+}
+.task-content{
+	color: #333333;
+	font-size: 12px;
+}
+.accept-task{
+	position: absolute;
+	top: 35px;
+	right: 30px;
+}
+.accept-task-btn{
+	display: inline-block;
+	width: 80px;
+	height: 30px;
+	line-height: 25px;
+	text-align: center;
+	color: white;
+	background-color: #FF4500;
+	border: 1px solid #f3c5ef;
+	outline: none;
+	border-radius: 6px;
+}
+.accept-task-btn:hover{
+	cursor:pointer;
+}
+

@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+
+	<constant name="struts.enable.DynamicMethodInvocation"
+		value="false" />
+	<constant name="struts.devMode" value="true" />
+
+	<package name="action" namespace="/" extends="struts-default">
+
+		<global-results>
+			<result name="error">500.html</result>
+		</global-results>
+		<global-exception-mappings>
+			<exception-mapping exception="java.lang.Exception"
+				result="error" />
+		</global-exception-mappings>
+
+		<action name="findGoodsByStatus"
+			class="com.coss.action.ShopsAction" method="findGoodsByStatus">
+			<result name="success">main.jsp</result>
+		</action>
+
+		<action name="findGoodsByrId"
+			class="com.coss.action.ShopsAction" method="findGoodsByrId">
+			<result name="success">details.jsp</result>
+		</action>
+		<action name="findGoodsByType"
+			class="com.coss.action.ShopsAction" method="findGoodsByType">
+			<result name="success">details.jsp</result>
+		</action>
+		<action name="findByrName" class="com.coss.action.ShopsAction"
+			method="findByrName">
+			<result name="success">details.jsp</result>
+		</action>
+		<action name="searchByName" class="com.coss.action.ShopsAction"
+			method="searchByName">
+			<result name="success">details.jsp</result>
+		</action>
+		<action name="findGoodsByShopName"
+			class="com.coss.action.ShopsAction" method="findGoodsByShopName">
+			<result name="success">order.jsp</result>
+		</action>
+		<action name="findGoodsBycId"
+			class="com.coss.action.ShopsAction" method="findGoodsBycId">
+			<result name="success">order.jsp</result>
+		</action>
+		<action name="register" class="com.coss.action.UserAction"
+			method="register">
+			<result name="success">login.jsp</result>
+		</action>
+		<action name="login" class="com.coss.action.UserAction"
+			method="login">
+			<result name="personal_login_suc">index.jsp</result>
+			<result name="admin_login_suc">master.jsp</result>
+			<result name="merchant_login_suc">addShops.jsp</result>
+			<result name="login_err">login.jsp</result>
+		</action>
+		<action name="merchantRegister"
+			class="com.coss.action.UserAction" method="merchantRegister">
+			<result name="success">merchantLogin.jsp</result>
+		</action>
+		<action name="masterRegister"
+			class="com.coss.action.UserAction" method="masterRegister">
+			<result name="success">masterLogin.jsp</result>
+		</action>
+		<action name="insertShops" class="com.coss.action.ShopsAction"
+			method="insertShops">
+			<result name="success">editShop.jsp</result>
+		</action>
+		<action name="editShop" class="com.coss.action.ShopsAction" method="findGoodsByUname">
+			<result name="success">editShop.jsp</result>
+		</action>
+		<action name="toPay" class="com.coss.action.PayAction"
+			method="toPay">
+			<result name="success">pay.jsp</result>
+		</action>
+		<action name="saveUserInfo" class="com.coss.action.PayAction"
+			method="saveUserInfo">
+			<result name="success">pay.jsp</result>
+		</action>
+		<action name="Pay" class="com.coss.action.PayAction"
+			method="Pay">
+			<result name="success">task.jsp</result>
+		</action>
+		<action name="goTask" class="com.coss.action.PayAction"
+			method="goTask">
+			<result name="success">task.jsp</result>
+		</action>
+		<action name="filterByRname" class="com.coss.action.PayAction"
+			method="filterByRname">
+			<result name="success">task.jsp</result>
+		</action>
+		<action name="sortByTime" class="com.coss.action.PayAction"
+			method="sortByTime">
+			<result name="success">task.jsp</result>
+		</action>
+		<action name="search" class="com.coss.action.PayAction"
+			method="searchTask">
+			<result name="success">task.jsp</result>
+		</action>
+		<action name="acceptTask" class="com.coss.action.PayAction" method="acceptTask">
+			<result name="success">task.jsp</result>
+		</action>
+		<action name="findShopsByStatus" class="com.coss.action.ShopsAction"
+			method="findShopsByStatus">
+			<result name="success">master.jsp</result>
+		</action>
+		<action name="allow" class="com.coss.action.ShopsAction" method="allow">
+			<result name="success">master.jsp</result>
+		</action>
+		<action name="apply" class="com.coss.action.ShopsAction" method="apply">
+			<result name="success">editShop.jsp</result>
+		</action>
+		<action name="updatePrice" class="com.coss.action.ShopsAction" method="updatePrice">
+			<result name="success">editShop.jsp</result>
+		</action>
+		<action name="deleteGood" class="com.coss.action.ShopsAction" method="deleteGood">
+			<result name="success">editShop.jsp</result>
+		</action>
+		<action name="deleteShop" class="com.coss.action.ShopsAction" method="deleteShop">
+			<result name="success">master.jsp</result>
+		</action>
+		<action name="searchShops" class="com.coss.action.ShopsAction" method="searchShops">
+			<result name="success">master.jsp</result>
+		</action>
+		<action name="reviewShops" class="com.coss.action.ShopsAction" method="reviewShops">
+			<result name="success">master.jsp</result>
+		</action>
+		<action name="reviewGoods" class="com.coss.action.ShopsAction" method="reviewGoods">
+			<result name="success">master2.jsp</result>
+		</action>
+		<action name="allowGood" class="com.coss.action.ShopsAction" method="allowGood">
+			<result name="success">master2.jsp</result>
+		</action>
+		<action name="remove" class="com.coss.action.ShopsAction" method="remove">
+			<result name="success">master2.jsp</result>
+		</action>
+		<action name="deleteGood" class="com.coss.action.ShopsAction" method="deleteGood2">
+			<result name="success">master2.jsp</result>
+		</action>
+		<action name="myOrder" class="com.coss.action.PayAction" method="MyOrder">
+			<result name="success">myOrder.jsp</result>
+		</action>
+	</package>
+	
+	<package name="default" extends="struts-default">
+		<default-action-ref name="notFound" />
+		<action name="notFound">
+			<result>404.html</result>
+		</action>
+	</package>
+</struts>
